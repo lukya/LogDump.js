@@ -12,6 +12,10 @@ var LogSchema = new Schema({
 	module: {
 		type: String
 	},
+	date_logged: {
+		type: Date,
+		default: Date.now
+	},
 	logLevel: {
 		type: [{
 			type: String,
